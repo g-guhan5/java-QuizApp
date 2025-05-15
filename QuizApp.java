@@ -27,21 +27,18 @@ public class QuizApp {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Question[] questions = {
-            new Question(
-                "who is the father of java?",
-                new String[]{"Guido van Rossum", "James Gosling", "Dennis Ritchie", "Charles Babbage"},
-                1
-            ),
-            new Question(
-                "Which country is Cristiano Ronaldo from?",
-                new String[]{"Brazil", "Argentina", "Portugal", "Spain"},
-                2
-            ),
-            new Question(
-                "Which number does Ronaldo famously wear?",
-                new String[]{"7", "9", "10", "11"},
-                0
-            )
+                new Question(
+                        "who is the father of java?",
+                        new String[] { "Guido van Rossum", "James Gosling", "Dennis Ritchie", "Charles Babbage" },
+                        1),
+                new Question(
+                        "Which country is Cristiano Ronaldo from?",
+                        new String[] { "Brazil", "Argentina", "Portugal", "Spain" },
+                        2),
+                new Question(
+                        "Which number does Ronaldo famously wear?",
+                        new String[] { "7", "9", "10", "11" },
+                        0)
         };
 
         int score = 0;
@@ -57,7 +54,7 @@ public class QuizApp {
                 score++;
             } else {
                 System.out.println("Wrong! Correct answer: " +
-                    questions[i].choices[questions[i].correctAnswerIndex]);
+                        questions[i].choices[questions[i].correctAnswerIndex]);
             }
         }
 
@@ -65,6 +62,3 @@ public class QuizApp {
         scanner.close();
     }
 }
-
-
-// guhan
